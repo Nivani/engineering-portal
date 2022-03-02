@@ -2,6 +2,9 @@ require("dotenv").config({ path: `${__dirname}/.env` })
 const getTimeToRead = require("./src/utils/timeToReadRss")
 
 module.exports = {
+  flags: {
+    GATSBY_CPU_COUNT: 1,
+  },
   siteMetadata: {
     title: `LoginRadius Blog`,
     description: "Company Updates, Technology Articles from LoginRadius",
